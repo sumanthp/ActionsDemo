@@ -25,7 +25,7 @@ jobs:
       run: |
         git config --global user.email ${{ secrets.EMAIL }}
         git config --global user.name ${{ secrets.USERNAME }}
-        git remote set-url origin ${{ secrets.DEPLOY_KEY }}@github.com/${{ secrets.USERNAME }}/ActionsDemo.git
+        git remote set-url origin https://github.com/sumanthp/ActionsDemo.git
         npm run deploy
       env:
         CI: false
