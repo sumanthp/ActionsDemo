@@ -23,7 +23,7 @@ jobs:
         CI: false
     - name: Deploy to gh-pages
       run: |
-	      git config --global user.mail ${{secrets.EMAIL}}
-	      git config --global user.name ${{secrets.USERNAME}}
-	      git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/${{secrets.USERNAME}}/ActionsDemo.git
-        npm run deploy
+       git config --global user.mail ${{secrets.EMAIL}}
+       git config --global user.name ${{secrets.USERNAME}}
+       git remote set-url origin https://${{secrets.ACCESS_TOKEN}}@github.com/${{secrets.USERNAME}}/ActionsDemo.git
+       npm run deploy
